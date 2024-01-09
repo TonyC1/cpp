@@ -1,9 +1,9 @@
 #!/bin/bash
-echo "Creating New Container- cHROME BOOK"
+echo "Creating New Container- CHROME BOOK"
 if [ "$#" == "1" ]
 then
     echo "Container Name is $1"
-    docker run -it -h "$1" --name "$1" -v ../cpp:/code -w /code mycpp /bin/bash
+    docker run -it -h "$1" --name "$1" -v ../cpp:/code -w /code mygcc /bin/bash
 
 else
     echo "you need to specify a name for the container"
