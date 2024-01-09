@@ -1,0 +1,188 @@
+BASH=/usr/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extquote:force_fignore:globasciiranges:globskipdots:hostcomplete:interactive_comments:patsub_replacement:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=([0]="0")
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_COMMAND='set > set.txt'
+BASH_LINENO=()
+BASH_LOADABLES_PATH=/usr/local/lib/bash:/usr/lib/bash:/opt/local/lib/bash:/usr/pkg/lib/bash:/opt/pkg/lib/bash:.
+BASH_REMATCH=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="5" [1]="2" [2]="15" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='5.2.15(1)-release'
+BROWSER=/root/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/helpers/browser.sh
+COLORTERM=truecolor
+COLUMNS=121
+DIRSTACK=()
+EUID=0
+GCC_MIRRORS=$'https://ftpmirror.gnu.org/gcc \t\thttps://mirrors.kernel.org/gnu/gcc \t\thttps://bigsearcher.com/mirrors/gcc/releases \t\thttp://www.netgull.com/gcc/releases \t\thttps://ftpmirror.gnu.org/gcc \t\tftp://ftp.gnu.org/gnu/gcc'
+GCC_VERSION=13.2.0
+GIT_ASKPASS=/root/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass.sh
+GPG_KEYS=$'B215C1633BCA0477615F1B35A5B3A004745C015A \tB3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 \t90AA470469D3965A87A5DCB494D03953902C9419 \t80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C \t7F74F97C103468EE5D750B583AB00996FC26A641 \t33C235A34C46AA3FFB293709A328C3A2C3C45C06 \tD3A93CAD751C2AF4F8C7AD516C35B99309B5FA62'
+GROUPS=()
+HISTFILE=/root/.bash_history
+HISTFILESIZE=500
+HISTSIZE=500
+HOME=/root
+HOSTNAME=mycpp
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=en_US.UTF-8
+LINES=18
+MACHTYPE=x86_64-pc-linux-gnu
+MAILCHECK=60
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/root/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PIPESTATUS=([0]="0")
+PPID=158
+PROMPT_COMMAND=__vsc_prompt_cmd
+PS1=$'\\[\E]633;A\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$ \\[\E]633;B\a\\]'
+PS2=$'\\[\E]633;F\a\\]> \\[\E]633;G\a\\]'
+PS4='+ '
+PWD=/code
+REMOTE_CONTAINERS=true
+REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-48841358c7f98cae6b59856e8264239dd78270f6.sock
+REMOTE_CONTAINERS_SOCKETS='["/root/.gnupg/S.gpg-agent"]'
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:emacs:hashall:histexpand:history:interactive-comments:monitor
+SHLVL=2
+TERM=xterm-256color
+TERM_PROGRAM=vscode
+TERM_PROGRAM_VERSION=1.74.2
+UID=0
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VSCODE_GIT_ASKPASS_MAIN=/root/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_NODE=/root/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node
+VSCODE_GIT_IPC_HANDLE=/tmp/vscode-git-d6d861861c.sock
+VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-e4913761-986a-4976-a468-5dc428b2212d.sock
+VSCODE_SHELL_INTEGRATION=1
+_=pwd
+__vsc_current_command='set > set.txt'
+__vsc_custom_PS1=$'\\[\E]633;A\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$ \\[\E]633;B\a\\]'
+__vsc_custom_PS2=$'\\[\E]633;F\a\\]> \\[\E]633;G\a\\]'
+__vsc_dbg_trap=
+__vsc_history_verify=1
+__vsc_in_command_execution=1
+__vsc_initialized=1
+__vsc_original_PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+__vsc_original_PS2='> '
+__vsc_original_prompt_command=
+__vsc_status=0
+__vsc_command_complete () 
+{ 
+    if [ "$__vsc_current_command" = "" ]; then
+        builtin printf '\e]633;D\a';
+    else
+        builtin printf '\e]633;D;%s\a' "$__vsc_status";
+    fi;
+    __vsc_update_cwd
+}
+__vsc_command_output_start () 
+{ 
+    builtin printf '\e]633;C\a';
+    builtin printf '\e]633;E;%s\a' "$(__vsc_escape_value "${__vsc_current_command}")"
+}
+__vsc_continuation_end () 
+{ 
+    builtin printf '\e]633;G\a'
+}
+__vsc_continuation_start () 
+{ 
+    builtin printf '\e]633;F\a'
+}
+__vsc_escape_value () 
+{ 
+    builtin local LC_ALL=C str="${1}" i byte token out='';
+    for ((i=0; i < "${#str}"; ++i ))
+    do
+        byte="${str:$i:1}";
+        if [ "$byte" = "\\" ]; then
+            token="\\\\";
+        else
+            if [[ "$byte" == [0-9A-Za-z] ]]; then
+                token="$byte";
+            else
+                builtin printf -v token '\\x%02X' "$(( $(builtin printf '0x%X' "'$byte'") & 0xFF ))";
+            fi;
+        fi;
+        out+="$token";
+    done;
+    builtin printf '%s\n' "${out}"
+}
+__vsc_precmd () 
+{ 
+    __vsc_command_complete "$__vsc_status";
+    __vsc_current_command="";
+    __vsc_update_prompt
+}
+__vsc_preexec () 
+{ 
+    __vsc_initialized=1;
+    if [[ ! "$BASH_COMMAND" =~ ^__vsc_prompt* ]]; then
+        if [ "$__vsc_history_verify" = "1" ]; then
+            __vsc_current_command="$(builtin history 1 | sed 's/ *[0-9]* *//')";
+        else
+            __vsc_current_command=$BASH_COMMAND;
+        fi;
+    else
+        __vsc_current_command="";
+    fi;
+    __vsc_command_output_start
+}
+__vsc_preexec_only () 
+{ 
+    if [ "$__vsc_in_command_execution" = "0" ]; then
+        __vsc_in_command_execution="1";
+        __vsc_preexec;
+    fi
+}
+__vsc_prompt_cmd () 
+{ 
+    __vsc_status="$?";
+    __vsc_precmd
+}
+__vsc_prompt_cmd_original () 
+{ 
+    __vsc_status="$?";
+    __vsc_restore_exit_code "${__vsc_status}";
+    for cmd in "${__vsc_original_prompt_command[@]}";
+    do
+        eval "${cmd:-}";
+    done;
+    __vsc_precmd
+}
+__vsc_prompt_end () 
+{ 
+    builtin printf '\e]633;B\a'
+}
+__vsc_prompt_start () 
+{ 
+    builtin printf '\e]633;A\a'
+}
+__vsc_restore_exit_code () 
+{ 
+    return "$1"
+}
+__vsc_update_cwd () 
+{ 
+    builtin printf '\e]633;P;Cwd=%s\a' "$(__vsc_escape_value "$PWD")"
+}
+__vsc_update_prompt () 
+{ 
+    if [ "$__vsc_in_command_execution" = "1" ]; then
+        if [[ "$__vsc_custom_PS1" == "" || "$__vsc_custom_PS1" != "$PS1" ]]; then
+            __vsc_original_PS1=$PS1;
+            __vsc_custom_PS1="\[$(__vsc_prompt_start)\]$__vsc_original_PS1\[$(__vsc_prompt_end)\]";
+            PS1="$__vsc_custom_PS1";
+        fi;
+        if [[ "$__vsc_custom_PS2" == "" || "$__vsc_custom_PS2" != "$PS2" ]]; then
+            __vsc_original_PS2=$PS2;
+            __vsc_custom_PS2="\[$(__vsc_continuation_start)\]$__vsc_original_PS2\[$(__vsc_continuation_end)\]";
+            PS2="$__vsc_custom_PS2";
+        fi;
+        __vsc_in_command_execution="0";
+    fi
+}

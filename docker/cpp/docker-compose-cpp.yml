@@ -1,0 +1,9 @@
+version: "3"
+services:
+  cpp:
+    image: gcc
+    volumes:
+      - /home/cb-liinux/google/code/cpp:/google-code
+    hostname: gcc
+    # exec: bash?
+    

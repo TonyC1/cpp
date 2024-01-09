@@ -1,0 +1,11 @@
+version: "3"
+services:
+  cpp:
+    image: eclipse/cpp_gcc
+    ports: 
+      - 4403:4403
+      - 2222:22
+      - 4915:4915
+    volumes:
+      - /home/cb-liinux/google/code/cpp:/google-code
+    hostname: cpp
