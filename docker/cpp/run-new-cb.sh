@@ -3,7 +3,7 @@ echo "Creating New Container- CHROME BOOK"
 if [ "$#" == "1" ]
 then
     echo "Container Name is $1"
-    docker run -it -h "$1" --name "$1" -v ../../cpp/cpp:/code -w /code mygcc /bin/bash
+    docker run -it -h "$1" --name "$1" -v /home/cb-liinux/code/cpp:/code -w /code mygcc /bin/bash
 
 else
     echo "you need to specify a name for the container"
